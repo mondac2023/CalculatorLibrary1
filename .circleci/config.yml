@@ -18,5 +18,5 @@ jobs:
           name: run test
           command: |
             . venv/bin/activate
-            flak8 --exclude=venv* --statistics
+            flake8 --exclude=venv* --statistics
             pytest -v --cov=Calculator
